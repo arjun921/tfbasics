@@ -7,5 +7,5 @@ print(type(b))
 result = tf.multiply(a,b)
 print(result)
 
-sess = tf.Session()
-print(sess.run(result))
+with tf.Session() as sess:
+	print(sess.run(result))
